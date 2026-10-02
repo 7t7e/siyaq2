@@ -1,0 +1,8 @@
+{
+  "name": "سياق | منصة كشف المحتوى المجتزأ والأمن الفكري",
+  "description": "منصة ذكاء اصطناعي لكشف وتوضيح السياق الأصلي للأخبار والمقاطع المتداولة قبل اتخاذ موقف، تعزيزاً للوسطية والأمن الفكري.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #14284B;
+  --color-brand-secondary: #2F6FB5;
+  --color-brand-accent: #DCE9F7;
+  --color-brand-bg: #F7F4EE;
+  --color-brand-card: #FFFFFF;
+  --color-brand-text: #1B2433;
+  --color-brand-muted: #6B7280;
+
+  --color-status-complete: #2E8B6A;
+  --color-status-incomplete: #E0A030;
+  --color-status-misleading: #C94A3F;
+
+  --font-arabic: 'IBM Plex Sans Arabic', 'Tajawal', system-ui, sans-serif;
+  --font-tajawal: 'Tajawal', 'IBM Plex Sans Arabic', system-ui, sans-serif;
+}
+
+:root {
+  --bg-dots: radial-gradient(#DCE9F7 1.5px, transparent 1.5px);
+}
+
+.dark {
+  --color-brand-primary: #1E3A6E;
+  --color-brand-secondary: #4C8DD9;
+  --color-brand-accent: #1C2B42;
+  --color-brand-bg: #0F172A;
+  --color-brand-card: #182234;
+  --color-brand-text: #F1F5F9;
+  --color-brand-muted: #94A3B8;
+  --bg-dots: radial-gradient(#1E293B 1.5px, transparent 1.5px);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Subtle dot grid pattern */
+.bg-dot-pattern {
+  background-image: var(--bg-dots);
+  background-size: 24px 24px;
+}
+
+/* Subtle animated shimmer for loading states */
+@keyframes shimmer {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite linear;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1ECE1;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
